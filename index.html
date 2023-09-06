@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>合肥海洁科技责任有限公司</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="layer/layer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/public.js?v=005" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/layui.js"></script>
+    <script src="js/stickUp.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js?v=018" type="text/javascript" charset="utf-8"></script>
+
+
+</head>
+
+<body>
+    <!--轮播图开始-->
+    <div class="layui-carousel swiperWrapper" id="lunbo">
+        <div carousel-item="" class="swiperBox">
+            <div class="swiper-item">
+                <img src="images/banner1.png" alt="">
+            </div>
+            <!-- <div class="swiper-item">
+            <img src="images/banner2.png" alt="">
+        </div>
+        <div class="swiper-item">
+            <img src="images/banner3.png" alt="">
+        </div>
+        <div class="swiper-item">
+            <img src="images/banner4.png" alt="">
+        </div>
+        <div class="swiper-item">
+            <img src="images/banner5.png" alt="">
+        </div> -->
+        </div>
+    </div>
+    <script>
+        var b = 1920 / 485;//我的图片比例
+        //获取浏览器宽度
+        var W = $(window).width();
+        var H = $(window).height();
+        layui.use('carousel', function () {
+            var carousel = layui.carousel;
+            carousel.render({
+                elem: '#lunbo',
+                width: '100%',
+                height: (W / b).toString() + "px", //按比例和浏览器可视页面宽度来获取高度
+                anim: 'fade',
+                interval: 5000,
+                arrow: 'none'
+            })
+        })
+
+
+    // //窗口变化是重新加载
+    // $(window).resize(function () {
+    //     var b = 1920 / 485;//我的图片比例
+    //     //获取浏览器宽度
+    //     var W = $(window).width();
+    //     var H = $(window).height();
+    //     layui.use('carousel', function () {
+    //         var carousel = layui.carousel;
+    //         carousel.render({
+    //             elem: '#lunbo',
+    //             width: '100%',
+    //             height: (W / b).toString() + "px", //按比例和浏览器可视页面宽度来获取高度
+    //             anim: 'defaul'
+    //         })
+    //     })
+    // })
+
+
+    </script>
+    <!--轮播图结束-->
+
+    <!--导航栏开始-->
+    <div class="navWrapper clear" id="navList">
+        <div class="navBox clear">
+            <ul>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">通知公告</a></li>
+                <li><a href="javascript:;">核心业务</a></li>
+                <li><a href="javascript:;">产品介绍</a></li>
+                <!-- <a href="javascript:;">报名入口</a> -->
+                <li><a href="javascript:;">关于我们</a></li>
+                <!-- <a href="javascript:;"  id="grzxli">个人中心</a> -->
+
+                <!--   暂时不用了
+            <li onclick="clickmenu(1,2)"><a href="javascript:;">关于赛事</a></li>
+            <li onclick="clickmenu(1,3)"><a href="javascript:;">通知及下载</a></li>
+             -->
+
+                <!-- <li onclick="clickmenu(8,'')"><a href="javascript:;" id="zsxz">证书下载</a></li> -->
+
+
+            </ul>
+        </div>
+    </div>
+    <!--导航栏结束-->
+
+    <!--主要内容开始-->
+    <div class="conentWrapper" id="main">
+        <div class="contentBox">
+            <!--        新闻公告-->
+        </div>
+        <div class="content-item clear section1">
+            <div class="title-box newsBg" style="margin-top: 20px"></div>
+            <!--  新闻列表 -->
+            <div class="item-box clear" id="newslist">
+                <div class="newsCard">
+                    <div class="new-imgBox" onclick="window.location.href='https://hs.china.com.cn/zixun/95202.html'">
+                        <img src="images/picture2.png"
+                            alt="">
+                    </div>
+                    <div class="new-msgBox">
+                        <h3>合肥工业大学研制螺旋推进式海陆两栖垃圾清理机器人</h3>
+                        <p>合肥工业大学海洁团队近日提出了一项创新性的海陆两栖垃圾清理机器人设计，该设计基于螺旋滚筒机械结构，并配备机械臂形式的铲斗。这一研究成果在7月25日发表于《Marine Science and Engineering》期刊上，标志着机器人技术在海洋垃圾清理领域的重要突破。该设计不仅能够在海面和滩涂等环境中灵活收集垃圾，还能实现垃圾的转运，填补了海洋垃圾清理领域的技术空白。</p>
+                        <div> <span></span> <span style="display: none">1693372479</span></div>
+                    </div>
+                </div>
+                <div class="newsCard">
+                    <div class="new-imgBox"
+                        onclick="window.location.href='https://news.sina.com.cn/sx/2023-08-31/detail-imzizzqm6603598.shtml'">
+                        <img src="images/picture3.png"
+                            alt="">
+                    </div>
+                    <div class="new-msgBox">
+                        <h3>合肥工业大学海洁团队在海洋垃圾污染领域取得重大突破</h3>
+                        <p>8月13日，记者获悉，合肥工业大学海洁团队在解决海洋及海滩垃圾清理难题方面取得了显著进展。通过创新性的螺旋滚筒机械结构和机械臂式铲斗设计，该团队成功研发出螺旋推进式海陆两栖垃圾清理机器人，为海洋垃圾清理领域注入了新的活力。这一设计不仅使机器人能够在海面和滩涂等多样环境中高效地收集垃圾，还具备了垃圾转运的能力，填补了海洋垃圾清理领域的技术空白。</p>
+                        <div> <span></span> <span style="display: none">1692886414</span></div>
+                    </div>
+                </div>
+                <!-- <div class="newsCard">
+                    <div class="new-imgBox" onclick="window.location.href='http://xhslink.com/XX7Ddu'">
+                        <img src="https://cmpmatch-files.oss-cn-beijing.aliyuncs.com/uploads/20230811/c800f1dba83dab7f3956f3f0e90a85e0.png"
+                            alt="">
+                    </div>
+                    <div class="new-msgBox">
+                        <h3>第十届“创青春”中国青年创新创业大赛 （科技创新专项）决赛晋级名单</h3>
+                        <p>第十届“创青春”中国青年创新创业大赛 （科技创新专项）决赛晋级名单</p>
+                        <div> <span></span> <span style="display: none">1691741187</span></div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="item-btn">
+                <a href="javascript:;">查看更多</a>
+            </div>
+        </div>
+
+        <!--        活动主题-->
+        <div class="content-item clear section1" id="block1">
+            <div class="title-box zhutiBg"></div>
+            <div class="item-box clear">
+                <div style="width: 90%;margin: 30px auto">
+                    <img src="images/zhuti_bg.jpg" alt="" style="width: 100%;margin-bottom: 50px">
+                </div>
+            </div>
+
+        </div>
+        <!--        组织单位           -->
+        <div class="content-item clear section1" id="block3">
+            <div class="title-box zuBg"></div>
+            <div class="item-box clear">
+                <div style="width: 90%;margin: 30px auto">
+                    <img src="images/zz_bg.png" alt="" style="width: 100%;margin-bottom: 50px">
+                </div>
+
+            </div>
+
+        </div>
+        <!-- 各分赛区报名入口 -->
+
+
+        <!--        参赛要求-->
+
+
+        <!--        大赛简介-->
+        <div class="content-item clear section3" id="block4">
+            <div class="title-box dsBg"></div>
+            <div class="item-box clear">
+                <div style="width: 90%;margin: 30px auto">
+                    <img src="images/jj_bg.png" alt="" style="width: 100%;margin-bottom: 50px">
+                </div>
+
+            </div>
+            <div class="item-btn"></div>
+        </div>
+        <!--        通知下载-->
+        <div class="content-item clear " id="download" style="display: none">
+            <div class="title-box downBg"></div>
+            <div class="item-box clear">
+                <div class="file-list-box" id="file_list">
+                    <div class="file-list-item">
+                        <span>第八届“创青春”中国青年创业就业基金会大赛报名通知</span>
+                        <span>下载附件</span>
+                    </div>
+                    <div class="file-list-item">
+                        <span>第八届“创青春”中国青年创业就业基金会大赛报名通知</span>
+                        <span>下载附件</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item-btn">
+                <!--                <a href="">查看更多</a>-->
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--新闻模块-->
+    <section style="display:none; margin-top: 20px" id="news">
+        <div class="box">
+            <div class="tpBox">
+                <span>当前位置：大赛新闻</span>
+                <span>返回</span>
+            </div>
+            <div class="new-lists" id="news_list">
+                <div class="lists-item clear">
+                    <div class="item-left ">
+                        <img src="images/banner1.jpg" alt="">
+                    </div>
+                    <div class="item-right ">
+                        <h3>"航天科工杯"第七届“创青春”中国青年创业就业大赛全国赛（商工组、农业农村组）决赛获奖名单公布</h3>
+                        <p>“创青青春”中国青年创业就业协会第七届“创青青春”中国青年创业就业协会</p>
+                        <div>
+                            <span>来源：中国青年创业就业基金会</span>
+                            <span>发布：2021-05-12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lists-item clear">
+                    <div class="item-left ">
+                        <img src="images/banner1.jpg" alt="">
+                    </div>
+                    <div class="item-right ">
+                        <h3>"航天科工杯"第七届“创青春”中国青年创业就业大赛全国赛（商工组、农业农村组）决赛获奖名单公布</h3>
+                        <p>“创青青春”中国青年创业就业协会第七届“创青青春”中国青年创业就业协会</p>
+                        <div>
+                            <span>来源：中国青年创业就业基金会</span>
+                            <span>发布：2021-05-12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lists-item clear">
+                    <div class="item-left ">
+                        <img src="images/banner1.jpg" alt="">
+                    </div>
+                    <div class="item-right ">
+                        <h3>"航天科工杯"第七届“创青春”中国青年创业就业大赛全国赛（商工组、农业农村组）决赛获奖名单公布</h3>
+                        <p>“创青青春”中国青年创业就业协会第七届“创青青春”中国青年创业就业协会</p>
+                        <div>
+                            <span>来源：中国青年创业就业基金会</span>
+                            <span>发布：2021-05-12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lists-item clear">
+                    <div class="item-left ">
+                        <img src="images/banner1.jpg" alt="">
+                    </div>
+                    <div class="item-right ">
+                        <h3>"航天科工杯"第七届“创青春”中国青年创业就业大赛全国赛（商工组、农业农村组）决赛获奖名单公布</h3>
+                        <p>“创青青春”中国青年创业就业协会第七届“创青青春”中国青年创业就业协会</p>
+                        <div>
+                            <span>来源：中国青年创业就业基金会</span>
+                            <span>发布：2021-05-12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pageBox">
+                <div class="clearfix pagebox" id="page"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--新闻详情模块-->
+    <section style="display:none;margin-top: 20px" id="newsinfo">
+        <div class="box">
+            <div class="tpBox">
+                <span>当前位置：新闻详情</span>
+                <span>返回</span>
+            </div>
+            <div class="news-details">
+                <div class="csitop">
+                    <h3 id="title">路边摊不再列入文明城市测评，“小吃小喝”迎来政策红利</h3>
+                    <div class="csitopi displaynone" id="tags"></div>
+                    <div class="csitopb clearfix">
+                        <p class="fl"><span id="source">中国青年创业就业基金会</span>发布时间： <i
+                                id="create_time_format">2020-04-21</i>
+                        </p>
+
+                    </div>
+                </div>
+                <br>
+                <div class="csitxt" id="content"></div>
+            </div>
+            <div class="pageBox">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--个人中心模块-->
+    <section style="display:none;margin-top: 20px" id="person">
+        <div class="box">
+            <div class="tpBox">
+                <span>当前位置：个人中心</span>
+                <span style="cursor: pointer">退出登录</span>
+            </div>
+            <div class="user-content">
+
+                <table id="bmlist">
+                    <tr style="background: #f3f4f7">
+                        <th>参赛编码</th>
+                        <th>大赛名称</th>
+                        <th>参赛组别</th>
+                        <th>报名时间</th>
+                        <th>报名状态</th>
+                        <!--                    <th>原因</th>-->
+                        <th>操作</th>
+                    </tr>
+
+                    <!--<tr>
+                    <td>202105120023</td>
+                    <td>第八届“创青春”中国青年创业就业大赛</td>
+                    <td>创新组</td>
+                    <td>2021-05-12  12:54</td>
+                    <td>报名成功</td>
+                    <td>
+                        <span>取消报名</span>
+                        <span>编辑</span>
+                    </td>
+                </tr>-->
+
+                </table>
+            </div>
+            <div class="pageBox">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 参赛证书模块 -->
+    <section style="display:none;margin-top: 20px" id="zhengshus">
+        <div class="box">
+            <div class="tpBox">
+                <span>当前位置：参赛证书</span>
+                <span style="cursor: pointer">退出登录</span>
+            </div>
+            <div class="user-content">
+                <div id="zhengshu_Lists">
+                    <div class="zhengsu-item">
+                        <p class="zs-item-title">证书标题</p>
+                        <p class="zs-item-bt">下载</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="pageBox">
+            </div>
+
+        </div>
+
+    </section>
+    <!--底部开始-->
+    <div class="footWrapper">
+        <img src="images/footImg.png" alt="" style="width: 100%">
+        <!--    <div class="footBox clear">-->
+        <!--        <div>-->
+        <!--            <h2>大赛组委会联系方式</h2>-->
+        <!--            <div class="div-one clear">-->
+        <!--                <ul>-->
+        <!--                    <li><a>联系电话：010-85212734 / 85212147</a></li>-->
+        <!--                    <li><a>工作时间：08:30 - 11:30；14:00 - 17:00</a></li>-->
+        <!--                    <li><a>电子邮箱：cfyee@sohu.com</a></li>-->
+        <!--                    <li><a>官方微信：中国青年创业就业基金会</a></li>-->
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div>-->
+        <!--            <h3>报名系统支持</h3>-->
+        <!--            <div class="div-one clear">-->
+        <!--                <ul>-->
+        <!--&lt;!&ndash;                    <li><a>技术支持：至德讯通（北京）科技有限公司</a></li>&ndash;&gt;-->
+        <!--                    <li><a>联&nbsp;&nbsp;系&nbsp;&nbsp;人：强经理</a></li>-->
+        <!--                    <li><a>联系电话：13552946354（微信同号）</a></li>-->
+        <!--                    <li><a>电子邮箱：qiangjijun@digilinx.cn</a></li>-->
+
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div>-->
+        <!--            <h3>公众号\小程序</h3>-->
+        <!--            <div class="div-one clear">-->
+        <!--                <ul>-->
+        <!--                    <li style="width: 25%">-->
+        <!--                        <div style="width: 100%" >-->
+        <!--                            <img src="images/u64.jpg" alt="" style="width: 100%">-->
+        <!--                            <p style="width: 100%; line-height: 26px; text-align: center;font-size: 12px">扫码加关注</p>-->
+        <!--                        </div>-->
+        <!--                    </li>-->
+        <!--                    <li style="width: 25%;margin-left: 20px">-->
+        <!--                        <div style="width: 100%" >-->
+        <!--                            <img src="images/wx_xx.jpg" alt="" style="width: 100%">-->
+        <!--                            <p style="width: 100%; line-height: 26px; text-align: center;font-size: 12px">扫码加关注</p>-->
+        <!--                        </div>-->
+        <!--                    </li>-->
+        <!--                    <li style="width: 25%;margin-left: 20px">-->
+        <!--                        <div style="width: 100%" >-->
+        <!--                            <img src="images/wx_jjh.jpg" alt="" style="width: 100%">-->
+        <!--                            <p style="width: 100%; line-height: 26px; text-align: center;font-size: 12px">扫码加关注</p>-->
+        <!--                        </div>-->
+        <!--                    </li>-->
+
+        <!--                </ul>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+    </div>
+    <!--底部结束-->
+
+    <div id="secret" style="display: none">
+        <div style="width: 95%;margin: 15px auto;">
+            <h1 style="text-align: center;margin: 15px auto;font-weight: 800">网站系统维护公告</h1>
+            <p id="show" style="font-size: 16px; line-height: 40px; padding: 0 15px;margin-bottom: 10px"></p>
+            <p id="word" style="display: none">因网站机房设备停机升级维护，5月20日18点至5月21日6点，网站有关服务暂时受到影响，因本次升级维护给您造成的不便，敬请谅解!</p>
+        </div>
+    </div>
+
+
+    <script>
+        $("#grzxli").hover(function () {
+            if (!getCookie('token')) {
+                $('#exit').hide();
+            } else {
+                $('#exit').show();
+            }
+        }, function () {
+            setTimeout(function () {
+                $('#exit').hide();
+            }, 5000);
+        });
+
+        /**
+         * 从这里开始
+         * **/
+        var interval = setInterval("move()", 18);
+        window.onload = function () {
+            interval;
+            showText();
+        };
+
+        document.getElementById("secret").onmouseover = function () {
+            clearInterval(interval);
+        };
+        document.getElementById("secret").onmouseout = function () {
+            interval = setInterval("move()", 18);
+        };
+
+        var x_dir = 1;
+        var y_dir = 1;
+        var speed = 1;
+        var secret = document.getElementById("secret");
+
+        //通知公告，在页面上飘来飘去的方法
+        function move() {
+
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+
+            // 判断宽度
+            if (x_dir === 1) {
+                if (Number(secret.style.left.replace("px", "")) + speed > windowWidth - 400) {
+                    secret.style.left = windowWidth - 400 + "px";
+                    x_dir = 0;
+                } else {
+                    secret.style.left = Number(secret.style.left.replace("px", "")) + speed + "px";
+
+                }
+            } else {
+                if (Number(secret.style.left.replace("px", "")) - speed < 0) {
+                    secret.style.left = "0px";
+                    x_dir = 1;
+                } else {
+                    secret.style.left = Number(secret.style.left.replace("px", "")) - speed + "px";
+                }
+            }
+            // 判断高度
+            if (y_dir === 1) {
+                if (Number(secret.style.top.replace("px", "")) + speed > windowHeight - 200) {
+                    secret.style.top = windowHeight - 200 + "px";
+                    y_dir = 0;
+                } else {
+                    secret.style.top = Number(secret.style.top.replace("px", "")) + speed + "px";
+                }
+            } else {
+                if (Number(secret.style.top.replace("px", "")) - speed < 0) {
+                    secret.style.top = "0px";
+                    y_dir = 1;
+                } else {
+                    secret.style.top = Number(secret.style.top.replace("px", "")) - speed + "px";
+                }
+            }
+        };
+
+        // 文字逐渐出现的方法
+
+        function showText() {
+            //获取文字的标签
+            var story = document.getElementById('word');
+            // 获取显示文字的标签
+            var s = document.getElementById('show');
+            var i = 0;
+            timer = setInterval(function () {
+                s.innerHTML = story.innerHTML.substring(0, i);
+                i++;
+                if (s.innerHTML === story.innerHTML) {
+                    clearInterval(timer);
+                }
+            }, 50);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
