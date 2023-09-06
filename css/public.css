@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+body{
+    background: #f3f4f7;
+}
+/*æ¸…é™¤æµ®åŠ¨*/
+.clear{
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;     //æ¸…é™¤å·¦å³ä¸¤è¾¹æµ®åŠ¨
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;
+}
